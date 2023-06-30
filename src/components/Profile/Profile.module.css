@@ -1,0 +1,255 @@
+.profile {
+  max-width: 50vw;
+  background-color: rgb(231, 236, 242);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  /* box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.8); */
+}
+
+@media screen and (max-width: 1023.98px) {
+  .profile {
+    margin: 10px auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .profile {
+    margin: 5px auto;
+    padding: 5px;
+  }
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 24px 24px 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(236 232 239);
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 12px 12px 0;
+
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px 5px 0;
+
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+.avatar {
+  max-width: 25vw;
+  max-height: 25vh;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .avatar {
+    max-width: 20vw;
+    max-height: 20vh;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .avatar {
+    max-width: 16vw;
+    max-height: 16vh;
+  }
+}
+
+.username {
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(81, 92, 105);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .username {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .username {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+  }
+}
+
+.tag {
+  margin-bottom: 6px;
+
+  font-size: 20px;
+
+  color: rgb(163, 173, 184);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .tag {
+    margin-bottom: 5px;
+
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .tag {
+    margin-bottom: 5px;
+
+    font-size: 10px;
+  }
+}
+
+.location {
+  font-size: 20px;
+  color: rgb(163, 173, 184);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .location {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .location {
+    font-size: 10px;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  background-color: rgb(252, 244, 244);
+  padding-left: 0;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.stats li:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+
+.stats li:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .stats {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+    border-radius: 0px 0px 8px 8px;
+  }
+  .stats li:first-child {
+    border-radius: 0px 0px 0px 8px;
+  }
+
+  .stats li:last-child {
+    border-radius: 0px 0px 8px 0px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .stats {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border-radius: 0px 0px 5px 5px;
+  }
+  .stats li:first-child {
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .stats li:last-child {
+    border-radius: 0px 0px 5px 0px;
+  }
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 134px;*/
+  height: 80px;
+  border: 1px solid rgb(196, 178, 178);
+
+  flex-basis: calc((100% * 2) / 3);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .lists {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .lists {
+    height: 40px;
+  }
+}
+
+.label {
+  margin-bottom: 5px;
+
+  font-size: 20px;
+  color: rgb(81, 92, 105);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .label {
+    font-size: 10px;
+  }
+}
+
+.quantity {
+  font-size: 20px;
+  color: rgb(81, 92, 105);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .quantity {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .quantity {
+    font-size: 10px;
+  }
+}
