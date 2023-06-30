@@ -1,4 +1,3 @@
-import './App.css';
 import { Profile } from './Profile/Profile.jsx';
 import user from './Profile/user.json';
 
