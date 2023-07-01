@@ -1,6 +1,6 @@
-import { TransactionHistoryItem } from "./TransactionHistoryItem";
-import PropTypes from 'prop-types'; // перевірка типів пропсів для компонента
-import css from './TransactionHistory.module.css'; // імпорт стилів для компонента
+import { TransactionHistoryItem } from "./TransactionHistoryItem"; // імпорт компоненту TransactionHistoryItem
+import PropTypes from 'prop-types'; // імпорт PropTypes для документування призначених типів властивостей, що передаються компонентам
+import css from './TransactionHistory.module.css'; // імпорт стилів 
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -27,7 +27,7 @@ export const TransactionHistory = ({ items }) => {
       </table>
     </div>
   );
-};
+}; // експорт компоненту TransactionHistory
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
@@ -35,4 +35,4 @@ TransactionHistory.propTypes = {
       id: PropTypes.string.isRequired,
     })
   ),
-};
+}; // типізація (опис типів) пропсів компоненту TransactionHistory

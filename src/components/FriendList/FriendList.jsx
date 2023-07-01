@@ -1,6 +1,6 @@
-import { FriendListItem } from './FriendListItem';
-import PropTypes from 'prop-types';
-import css from './FriendList.module.css';
+import { FriendListItem } from './FriendListItem'; // імпорт компоненту FriendListItem
+import PropTypes from 'prop-types'; // імпорт PropTypes для документування призначених типів властивостей, що передаються компонентам
+import css from './FriendList.module.css'; // імпорт стилів
 
 export const FriendList = ({ friends }) => {
   return (
@@ -15,12 +15,12 @@ export const FriendList = ({ friends }) => {
       ))}
     </ul>
   );
-};
+}; // експорт компоненту FriendList
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.shape({
+    PropTypes.exact({
       id: PropTypes.number.isRequired,
     })
   ),
-};
+}; // типізація (опис типів) пропсів компоненту FriendList

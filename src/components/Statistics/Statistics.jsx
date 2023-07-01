@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'; // перевірка типів пропсів для компонента
-import css from './Statistic.module.css'; // імпорт стилів для компонента
+import PropTypes from 'prop-types'; // імпорт PropTypes для документування призначених типів властивостей, що передаються компонентам
+import css from './Statistic.module.css'; // імпорт стилів
 
 export const Statistics = ({ title, stats }) => {
     return (
@@ -19,13 +19,13 @@ export const Statistics = ({ title, stats }) => {
         </ul>
       </section>
     );
-}
+} // експорт компоненту Statistics
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
-} // функція генерування випадкового кольору в форматі HEX (JS ДЗ №6)
+} // функція генерування випадкового кольору в форматі HEX (JS, ДЗ №6)
 
 Statistics.propTypes = {
     title: PropTypes.string,
@@ -36,4 +36,4 @@ Statistics.propTypes = {
         percentage: PropTypes.number.isRequired,
       }),
     ),
-  }; 
+  }; // типізація (опис типів) пропсів компоненту Statistics  

@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import css from './FriendList.module.css';
+import PropTypes from 'prop-types'; // імпорт PropTypes для документування призначених типів властивостей, що передаються компонентам
+import css from './FriendList.module.css'; // імпорт стилів 
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
@@ -11,10 +11,10 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
       <p className={css.name}>{name}</p>
     </li>
   );
-};
+}; // експорт компоненту FriendListItem
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-};
+}; // типізація (опис типів) пропсів компоненту FriendListItem 
