@@ -1,0 +1,138 @@
+.friendList {
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto 0;
+  padding: 15px;
+
+  background-color: rgb(231, 236, 242);
+  border-radius: 10px;  
+}
+
+@media screen and (max-width: 1023.98px) {
+  .friendList {
+    margin: 10px auto 0;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .friendList {
+    margin: 5px auto 0;
+    padding: 5px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 10px 5px 20px;
+  margin: 5px 24px;
+
+  border: 1px solid rgb(236 232 239);
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .item {    
+    padding: 4px 8px 4px 15px;
+    margin: 4px 12px;
+    gap: 15px;
+
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .item {    
+    padding: 3px 6px 3px 10px;
+    margin: 3px 5px;
+    gap: 10px;
+
+    border-radius: 5px;
+  }
+}
+
+.statusOffline {
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  background-color: red;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .statusOffline {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .statusOffline {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.statusOnline {
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  background-color: green;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .statusOnline {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .statusOnline {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.avatar {
+  width: 60px;
+
+  border-radius: 50%;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .avatar {
+    width: 50px;    
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .avatar {
+    width: 40px;   
+  }
+}
+
+.name {
+  font-size: 24px;
+  color: rgb(81, 92, 105);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .name {
+    font-size: 14px;
+  }
+}
