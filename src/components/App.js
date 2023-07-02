@@ -4,10 +4,10 @@ import { FriendList } from './FriendList/FriendList.jsx';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory.jsx';
 // імпорт компонентів
 
-import user from './Profile/user.json';
-import data from './Statistics/data.json';
-import friends from './FriendList/friends.json';
-import transactions from './TransactionHistory/transactions.json';
+import user from './data/user.json';
+import data from './data/data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
 // імпорт даних
 
 function App() {
